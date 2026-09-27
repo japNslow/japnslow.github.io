@@ -495,7 +495,7 @@ function printTerminalWelcome(output) {
 function handleTerminalCommand(cmd, output) {
   const line = document.createElement('div');
   line.className = 'term-line';
-  line.innerHTML = `<span class="term-prompt">kirill@kirillos:~$</span> <span class="term-white">${escapeHtml(cmd)}</span>`;
+  line.innerHTML = `<span class="term-prompt">misha@kirillos:~$</span> <span class="term-white">${escapeHtml(cmd)}</span>`;
   output.appendChild(line);
 
   const cleanCmd = cmd.toLowerCase().trim();
@@ -522,7 +522,7 @@ function handleTerminalCommand(cmd, output) {
       const dateStr = now.toISOString().slice(0, 10) + ' ' + now.toTimeString().slice(0, 8);
       res.innerHTML = `
 <pre style="font-family: inherit; margin: 0; line-height: 1.25;">
-<span class="term-cyan">  _  ___      _ _ _  ____   _____ </span>   <span class="term-yellow">kirill</span>@<span class="term-green">kirillos</span>
+<span class="term-cyan">  _  ___      _ _ _  ____   _____ </span>   <span class="term-yellow">misha</span>@<span class="term-green">kirillos</span>
 <span class="term-cyan"> | |/ (_)    (_) | |/ __ \\ / ____|</span>   <span class="term-dim">----------------------------</span>
 <span class="term-cyan"> | ' / _ _ __ _| | | |  | | (___  </span>   <span class="term-cyan">OS:</span>       <span class="term-white">KirillOS v0.2 (x86 32-bit Protected Mode)</span>
 <span class="term-cyan"> |  < | | '__| | | | |  | |\\___ \\ </span>   <span class="term-cyan">Kernel:</span>   <span class="term-dim">Monolithic ELF32 + kboot MBR (LBA 0)</span>
