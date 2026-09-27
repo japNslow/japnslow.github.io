@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>japNslow (Кирилл) — Портал Разработчика | GitHub Pages & Проекты</title>
+  <meta name="description" content="Официальный титульный портал разработчика japNslow (Кирилл): сборник проектов GitHub Pages, системное программирование (KirillOS), 3D ретро-движки (C64 Raycasting), эмуляция и gamedev.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+  <!-- Ambient background grid -->
+  <div class="bg-grid"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#" class="logo-brand">
+        <span class="logo-badge">JP</span>
+        <span>japNslow</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#pages">🌐 GitHub Pages</a></li>
+          <li><a href="#flagships">⚡ Флагманы</a></li>
+          <li><a href="#museum">💤 Архив</a></li>
+          <li><a href="#stats">📊 Статистика</a></li>
+          <li><a href="#catalog">📁 Все проекты</a></li>
+          <li><a href="#terminal">💻 Терминал</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="https://github.com/japNslow" target="_blank" rel="noopener" class="btn-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-profile">
+        <div class="avatar-wrapper">
+          <img src="https://avatars.githubusercontent.com/u/288657934?v=4" alt="japNslow" class="avatar-img" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%231a202c%22/><text x=%2250%22 y=%2258%22 font-size=%2235%22 text-anchor=%22middle%22 fill=%22%2300f2fe%22 font-family=%22sans-serif%22 font-weight=%22bold%22>JP</text></svg>'">
+          <span class="status-badge" title="Активен"></span>
+        </div>
+      </div>
+
+      <div>
+        <div class="hero-badge-tag">
+          <span>⚡ LOW-LEVEL & RETRO DEVELOPER</span>
+        </div>
+      </div>
+
+      <h1 class="hero-title">japNslow // Кирилл</h1>
+      <p class="hero-subtitle">
+        Создатель собственной 32-битной ОС <strong>KirillOS</strong>, 3D Raycasting движка для <strong>Commodore 64</strong>, эмуляторов ретро-архитектур, портов классики и интерактивных веб-приложений.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#pages" class="btn btn-primary">
+          <span>🌐 Смотреть GitHub Pages</span>
+        </a>
+        <a href="#flagships" class="btn btn-secondary">
+          <span>⚡ Флагманские проекты</span>
+        </a>
+        <a href="#terminal" class="btn btn-glow">
+          <span>💻 Запустить KirillOS CLI</span>
+        </a>
+      </div>
+
+      <!-- Stat ribbon -->
+      <div class="stats-ribbon">
+        <div class="stat-card">
+          <div class="stat-number">12</div>
+          <div class="stat-label">Всего репозиториев</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color: var(--accent-green);">5</div>
+          <div class="stat-label">Живых GitHub Pages</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color: var(--accent-purple);">6.8+ МБ</div>
+          <div class="stat-label">Исходного кода</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" style="color: var(--accent-amber);">x86 & 6502</div>
+          <div class="stat-label">Низкоуровневые архитектуры</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Pages Showcase -->
+  <section id="pages" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">
+          <span>🌐 Live Deployments</span>
+        </div>
+        <h2 class="section-title">Сборник всех GitHub Pages</h2>
+        <p class="section-desc">
+          Коллекция всех проектов, развернутых и доступных онлайн прямо сейчас на платформе GitHub Pages (<code>japnslow.github.io/...</code>). Вы можете открыть любой проект в браузере или протестировать прямо во встроенном окне предпросмотра!
+        </p>
+      </div>
+
+      <div id="pagesShowcaseContainer" class="pages-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Flagship Projects (Самые новые и продвинутые) -->
+  <section id="flagships" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">
+          <span>⚡ Новые и передовые</span>
+        </div>
+        <h2 class="section-title">Флагманские проекты</h2>
+        <p class="section-desc">
+          Наиболее технически сложные, передовые и свежие разработки: собственная операционная система, 3D рейкастинг на 8-битном чипе MOS 6510, мобильный порт DOOM и аппаратные эмуляторы.
+        </p>
+      </div>
+
+      <div class="flagship-list">
+        <!-- KirillOS Card -->
+        <div class="flagship-card">
+          <div class="flagship-header">
+            <div class="flagship-title-area">
+              <div class="flagship-icon">💻</div>
+              <div>
+                <h3 class="flagship-name">KirillOS v0.2</h3>
+                <div class="flagship-subtitle">32-Bit Monolithic Operating System for x86 (IA-32 Protected Mode)</div>
+              </div>
+            </div>
+            <span class="flagship-badge">🔥 Главный шедевр</span>
+          </div>
+
+          <p class="flagship-body">
+            Полноценная операционная система, написанная с нуля на языке Си и ассемблере x86. Включает собственный двухстадийный загрузчик MBR, терминал <code>kboot&gt;</code>, файловую систему KirillFS для ATA-накопителей, мощный графический режим VGA Mode 13h (320x200 256 цветов напрямую через регистры CRTC/Sequencer), аудио-подсистему Intel AC'97 с DMA bus-mastering, двухпанельный hex-редактор Kdhe с прямой записью секторов LBA, клона GNU nano (Kano) и собственный компилятор языка K!
+          </p>
+
+          <div class="flagship-features">
+            <div class="feature-item">
+              <span class="feature-bullet">✦</span>
+              <div class="feature-text">
+                <strong>Загрузчик kboot (MBR)</strong>
+                <span>Переход в 32-bit Protected Mode, IDT прерывания клавиатуры (IRQ1), загрузчик ELF32.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">✦</span>
+              <div class="feature-text">
+                <strong>VGA Mode 13h (320x200x256)</strong>
+                <span>Прямое программирование регистров VGA без BIOS, линейный фреймбуфер 0xA0000, алгоритм Брезенхема.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">✦</span>
+              <div class="feature-text">
+                <strong>Файловая система KirillFS</strong>
+                <span>До 32 файлов с хранением на ATA PIO жестком диске или прозрачным RAM-фоллбэком.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">✦</span>
+              <div class="feature-text">
+                <strong>Музыкальный трекер Kmidi</strong>
+                <span>2-октавное пианино, воспроизведение нот через AC'97 DMA и PC Speaker (Марио, Тетрис).</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">✦</span>
+              <div class="feature-text">
+                <strong>Редактор Kano & Hex Kdhe</strong>
+                <span>Полноценный клон nano с буфером строк, поиском Ctrl+W и hex-редактор секторов диска.</span>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-bullet">✦</span>
+              <div class="feature-text">
+                <strong>Компилятор KHEXD</strong>
+                <span>Собственный компилятор языка K: трансляция в байт-код .khex и запуск в виртуальной машине.</span>
+              </div>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://github.com/japNslow/KirillOS" target="_blank" rel="noopener" class="btn btn-primary">
+              <span>Репозиторий KirillOS на GitHub ↗</span>
+            </a>
+            <button class="btn btn-secondary" onclick="runTermCmd('kfetch')">
+              <span>Выполнить kfetch в терминале ⚡</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- 64-raycasting Card -->
+        <div class="flagship-card">
+          <div class="flagship-header">
+            <div class="flagship-title-area">
+              <div class="flagship-icon">🕹️</div>
+              <div>
+                <h3 class="flagship-name">64-raycasting</h3>
+                <div class="flagship-subtitle">3D Multicolor Bitmap Raycasting Engine for Commodore 64</div>
+              </div>
+            </div>
+            <span class="flagship-badge" style="background: linear-gradient(135deg, var(--accent-cyan), var(--accent-blue));">Retro 3D Tech</span>
+          </div>
+
+          <p class="flagship-body">
+            Рейкастинг-движок нового поколения для легендарного ретро-компьютера Commodore 64 (процессор MOS 6510 на тактовой частоте всего 1.0 МГц и 64 КБ ОЗУ). Движок полностью отказался от текстовых символов PETSCII в пользу настоящего растрового графического режима <strong>160x200 Multicolor Bitmap Mode</strong> с попиксельной отрисовкой в видеопамять VIC-II, текстурами стен из <strong>DOOM</strong> и <strong>Wolfenstein 3D</strong> (стальные бронелисты, заклепки, замковый камень с золотым крестом, шлюзовые гермодвери), перспективным текстурированным полом, затенением по осям X/Y и управлением с джойстика!
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-cyan">MOS 6510 (1 MHz)</span>
+            <span class="tag tag-purple">Commodore 64</span>
+            <span class="tag tag-green">160x200 Multicolor Bitmap</span>
+            <span class="tag tag-amber">DOOM Textures</span>
+            <span class="tag">Port 2 Joystick</span>
+            <span class="tag">C / Python Tables</span>
+          </div>
+
+          <div>
+            <a href="https://github.com/japNslow/64-raycasting" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>Смотреть исходный код на GitHub ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- doom-ios-port Card -->
+        <div class="flagship-card">
+          <div class="flagship-header">
+            <div class="flagship-title-area">
+              <div class="flagship-icon">🔥</div>
+              <div>
+                <h3 class="flagship-name">doom-ios-port</h3>
+                <div class="flagship-subtitle">DOOM Classic Native iOS Port & Tooling</div>
+              </div>
+            </div>
+            <span class="flagship-badge" style="background: linear-gradient(135deg, #ef4444, #9b51e0);">Classic Port</span>
+          </div>
+
+          <p class="flagship-body">
+            Сборка и нативный порт классического движка id Software DOOM под мобильную операционную систему Apple iOS на C++, C и Objective-C. В репозитории подготовлены нативные инструменты, скрипты сборки и сгенерирован готовый пакет приложения <code>Doom.ipa</code> (11 МБ).
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-purple">C++ (5 MB)</span>
+            <span class="tag tag-cyan">C (700 KB)</span>
+            <span class="tag tag-green">Objective-C</span>
+            <span class="tag tag-amber">Doom.ipa</span>
+            <span class="tag">iOS Engine</span>
+          </div>
+
+          <div>
+            <a href="https://github.com/japNslow/doom-ios-port" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>Репозиторий doom-ios-port ↗</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- AppleII-webemu Card -->
+        <div class="flagship-card">
+          <div class="flagship-header">
+            <div class="flagship-title-area">
+              <div class="flagship-icon">🍏</div>
+              <div>
+                <h3 class="flagship-name">AppleII-webemu</h3>
+                <div class="flagship-subtitle">Apple II Vintage Computer Web Emulator (JavaScript Canvas)</div>
+              </div>
+            </div>
+            <span class="flagship-badge" style="background: linear-gradient(135deg, var(--accent-green), var(--accent-cyan));">🌐 Live на Pages</span>
+          </div>
+
+          <p class="flagship-body">
+            Чистая реализация эмулятора легендарного компьютера Apple II в браузере. Полная программная эмуляция микропроцессора MOS 6502 с потактовой точностью, цветные видеорежимы Hi-Res и Lo-Res на HTML5 Canvas, поддержка эмуляции контроллера дисковода Disk II и динамика. Запущен прямо в браузере!
+          </p>
+
+          <div class="card-tags">
+            <span class="tag tag-green">JavaScript (105 KB)</span>
+            <span class="tag tag-cyan">HTML5 Canvas</span>
+            <span class="tag tag-purple">MOS 6502 CPU</span>
+            <span class="tag tag-amber">Apple II Architecture</span>
+          </div>
+
+          <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+            <a href="https://japnslow.github.io/AppleII-webemu/" target="_blank" rel="noopener" class="btn btn-primary">
+              <span>Запустить эмулятор в браузере ↗</span>
+            </a>
+            <button class="btn btn-secondary" onclick="openPreviewModal('AppleII-webemu', 'https://japnslow.github.io/AppleII-webemu/')">
+              <span>Быстрый просмотр 👁️</span>
+            </button>
+            <a href="https://github.com/japNslow/AppleII-webemu" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>GitHub ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Museum & Abandoned Repositories (Самые заброшенные) -->
+  <section id="museum" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">
+          <span>💤 Забытые артефакты & Архив</span>
+        </div>
+        <h2 class="section-title">Музей заброшенных репозиториев</h2>
+        <p class="section-desc">
+          Исторические реликвии, ранние эксперименты мая 2026 года и проекты, застывшие во времени. Каждый великий путь разработчика начинается с первых проб пера!
+        </p>
+      </div>
+
+      <div class="museum-grid">
+        <!-- japan -->
+        <div class="museum-card">
+          <div class="museum-card-header">
+            <div class="museum-title">
+              <span>⛩️</span> japan
+            </div>
+            <span class="relic-badge">Первый реликт #1</span>
+          </div>
+          <p class="museum-desc">
+            Самый первый репозиторий аккаунта, созданный 28 мая 2026 года в 13:58 UTC. Содержит только файл README с одной строкой <code># japan</code>. 0 байт кода, 0 коммитов с тех пор. Истинный памятник основанию профиля.
+          </p>
+          <div class="museum-footer">
+            <span>Создан: 28 мая 2026</span>
+            <a href="https://github.com/japNslow/japan" target="_blank" rel="noopener" style="color: var(--accent-amber); text-decoration: none;">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- bk0010-emulator -->
+        <div class="museum-card">
+          <div class="museum-card-header">
+            <div class="museum-title">
+              <span>📺</span> bk0010-emulator
+            </div>
+            <span class="relic-badge">Призрак идеи</span>
+          </div>
+          <p class="museum-desc">
+            Инициализированная ветка под эмулятор советского компьютера «Электроника БК-0010». Репозиторий пуст и ждёт своего звёздного часа, пока все силы брошены на KirillOS и C64 Raycasting.
+          </p>
+          <div class="museum-footer">
+            <span>Создан: 26 сент. 2026</span>
+            <a href="https://github.com/japNslow/bk0010-emulator" target="_blank" rel="noopener" style="color: var(--accent-amber); text-decoration: none;">GitHub →</a>
+          </div>
+        </div>
+
+        <!-- kymis-puzzle -->
+        <div class="museum-card">
+          <div class="museum-card-header">
+            <div class="museum-title">
+              <span>🐎</span> kymis-puzzle
+            </div>
+            <span class="relic-badge">Классика мая 2026</span>
+          </div>
+          <p class="museum-desc">
+            Веб-пятнашки 3x3 со стилизацией и наградой в виде выпитых литров кумыса. Создан 28 мая 2026, безупречно работает на GitHub Pages, но застыл в первозданном виде.
+          </p>
+          <div class="museum-footer">
+            <span>Pages: Активен</span>
+            <a href="https://japnslow.github.io/kymis-puzzle/" target="_blank" rel="noopener" style="color: var(--accent-green); text-decoration: none;">Играть ↗</a>
+          </div>
+        </div>
+
+        <!-- game -->
+        <div class="museum-card">
+          <div class="museum-card-header">
+            <div class="museum-title">
+              <span>⚡</span> game
+            </div>
+            <span class="relic-badge">Забыт 29 мая 2026</span>
+          </div>
+          <p class="museum-desc">
+            Мини-игра на скорость кликов («5 кликов за 3 секунды»), созданная 29 мая 2026. Один единственный коммит и тишина более 4 месяцев.
+          </p>
+          <div class="museum-footer">
+            <span>Pages: Активен</span>
+            <a href="https://japnslow.github.io/game/" target="_blank" rel="noopener" style="color: var(--accent-green); text-decoration: none;">Демо ↗</a>
+          </div>
+        </div>
+
+        <!-- zcb3 -->
+        <div class="museum-card">
+          <div class="museum-card-header">
+            <div class="museum-title">
+              <span>🦀</span> zcb3
+            </div>
+            <span class="relic-badge">Июньский форк (Rust)</span>
+          </div>
+          <p class="museum-desc">
+            Кликбот для Geometry Dash на Rust (492 КБ кода). Не получал коммитов с 23 июня 2026 года, но сохранил рабочую страницу на GitHub Pages.
+          </p>
+          <div class="museum-footer">
+            <span>Обновлен: 23 июня 2026</span>
+            <a href="https://japnslow.github.io/zcb3/" target="_blank" rel="noopener" style="color: var(--accent-cyan); text-decoration: none;">Pages ↗</a>
+          </div>
+        </div>
+
+        <!-- voice-bot -->
+        <div class="museum-card">
+          <div class="museum-card-header">
+            <div class="museum-title">
+              <span>🎙️</span> voice-bot
+            </div>
+            <span class="relic-badge">Приватный бот</span>
+          </div>
+          <p class="museum-desc">
+            Приватный репозиторий голосового бота на JavaScript из одного файла. Заморожен 20 сентября 2026 года после первичного тестирования.
+          </p>
+          <div class="museum-footer">
+            <span>Статус: Приватный (1 КБ)</span>
+            <span style="color: var(--text-dim);">Private</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics & Analytics -->
+  <section id="stats" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">
+          <span>📊 Аналитика кодовой базы</span>
+        </div>
+        <h2 class="section-title">Статистика и эволюция</h2>
+        <p class="section-desc">
+          Количественный анализ всех 12 репозиториев разработчика japNslow: распределение языков программирования и таймлайн инженерного роста.
+        </p>
+      </div>
+
+      <div class="stats-dashboard">
+        <!-- Languages Breakdown -->
+        <div class="stats-panel">
+          <h3 class="panel-title">
+            <span>💾</span> Распределение языков кодовой базы
+          </h3>
+          <div class="lang-bars">
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name"><span class="lang-dot" style="background: #f34b7d;"></span>C++</span>
+                <span class="lang-pct">5.1 МБ (71.5%)</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" style="width: 71.5%; background: #f34b7d;"></div></div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name"><span class="lang-dot" style="background: #355570;"></span>GDScript & BBCode</span>
+                <span class="lang-pct">1.0 МБ (14.5%)</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" style="width: 14.5%; background: #355570;"></div></div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name"><span class="lang-dot" style="background: #555555;"></span>C (KirillOS & C64)</span>
+                <span class="lang-pct">1.1 МБ (15.2%)</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" style="width: 15.2%; background: #555555;"></div></div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name"><span class="lang-dot" style="background: #dea584;"></span>Rust (zcb3)</span>
+                <span class="lang-pct">492 КБ (6.9%)</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" style="width: 6.9%; background: #dea584;"></div></div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name"><span class="lang-dot" style="background: #f1e05a;"></span>JavaScript & Web</span>
+                <span class="lang-pct">106 КБ (1.5%)</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" style="width: 1.5%; background: #f1e05a;"></div></div>
+            </div>
+
+            <div class="lang-item">
+              <div class="lang-header">
+                <span class="lang-name"><span class="lang-dot" style="background: #00f2fe;"></span>x86 Assembly & Linker</span>
+                <span class="lang-pct">9 КБ (Bootloader)</span>
+              </div>
+              <div class="bar-bg"><div class="bar-fill" style="width: 2%; background: #00f2fe;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Timeline of Development -->
+        <div class="stats-panel">
+          <h3 class="panel-title">
+            <span>📈</span> Хронология эволюции разработчика
+          </h3>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-point" style="border-color: var(--accent-amber);"></div>
+              <div class="timeline-date">28 – 29 МАЯ 2026</div>
+              <div class="timeline-content">
+                <h4>Зарождение профиля: первые веб-игры</h4>
+                <p>Создание первого репозитория <code>japan</code>, эксперименты с браузерными играми на чистом HTML5/JS: «Кумыс Пазл» и кликер на скорость реакции.</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-point" style="border-color: var(--accent-purple);"></div>
+              <div class="timeline-date">ИЮНЬ 2026</div>
+              <div class="timeline-content">
+                <h4>Моддинг Geometry Dash и Rust</h4>
+                <p>Разработка процедурного генератора уровней на C++ (<code>LayoutGenerator</code>) и высокопроизводительного кликбота на языке Rust (<code>zcb3</code>).</p>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-point" style="border-color: var(--accent-cyan);"></div>
+              <div class="timeline-date">СЕНТЯБРЬ 2026</div>
+              <div class="timeline-content">
+                <h4>Эра системного программирования и ретро-движков</h4>
+                <p>Колоссальный рывок в низкоуровневую разработку: 32-битная монолитная ОС <strong>KirillOS</strong>, 3D Raycasting для Commodore 64, эмулятор Apple II на Canvas, порт DOOM под iOS и интерактивный курс Godot GDScript!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Catalog with Search & Filter -->
+  <section id="catalog" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">
+          <span>📁 Полный каталог</span>
+        </div>
+        <h2 class="section-title">Все 12 репозиториев</h2>
+        <p class="section-desc">
+          Интерактивный список всех проектов с поиском в реальном времени, фильтрацией по категориям и сортировкой.
+        </p>
+      </div>
+
+      <div class="catalog-controls">
+        <div class="catalog-search-wrap">
+          <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="repoSearchInput" class="search-input" placeholder="Поиск по названию, языку, тегам или описанию (например: 'OS', 'DOOM', 'C64', 'Rust')...">
+        </div>
+
+        <div class="filter-bar">
+          <div class="filter-tabs">
+            <button class="tab-btn active" data-filter="all">Все (12)</button>
+            <button class="tab-btn" data-filter="pages">🌐 GitHub Pages (5)</button>
+            <button class="tab-btn" data-filter="flagship">★ Флагманы (5)</button>
+            <button class="tab-btn" data-filter="lowlevel">⚙️ Low-Level (4)</button>
+            <button class="tab-btn" data-filter="gamedev">🕹️ Игры & Эмуляция (6)</button>
+            <button class="tab-btn" data-filter="abandoned">💤 Архив (6)</button>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <span id="filteredReposCount" style="font-size: 0.85rem; color: var(--text-dim); font-family: var(--font-mono);"></span>
+            <select id="repoSortSelect" class="sort-select">
+              <option value="newest">Сначала новые</option>
+              <option value="oldest">Сначала старые</option>
+              <option value="size">По размеру кода</option>
+              <option value="name">По названию (A-Z)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div id="reposGridContainer" class="repos-grid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive KirillOS Terminal -->
+  <section id="terminal" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-tag">
+          <span>💻 Интерактивная веб-консоль</span>
+        </div>
+        <h2 class="section-title">Терминал KirillOS CLI</h2>
+        <p class="section-desc">
+          Почувствуйте атмосферу собственной операционной системы! Встроенная веб-эмуляция командного интерфейса KirillOS v0.2. Введите команду в строку или нажмите одну из кнопок быстрого доступа.
+        </p>
+      </div>
+
+      <div class="terminal-wrapper">
+        <div class="terminal-topbar">
+          <div class="term-dots">
+            <span class="term-dot dot-red"></span>
+            <span class="term-dot dot-yellow"></span>
+            <span class="term-dot dot-green"></span>
+          </div>
+          <div class="term-title">kirill@kirillos: ~ (x86 32-bit Protected Mode)</div>
+          <div class="term-shortcuts">
+            <button class="term-btn" onclick="runTermCmd('kfetch')">kfetch</button>
+            <button class="term-btn" onclick="runTermCmd('projects')">projects</button>
+            <button class="term-btn" onclick="runTermCmd('pages')">pages</button>
+            <button class="term-btn" onclick="runTermCmd('c64')">c64</button>
+            <button class="term-btn" onclick="runTermCmd('matrix')">matrix</button>
+            <button class="term-btn" onclick="runTermCmd('clear')">clear</button>
+          </div>
+        </div>
+
+        <div id="terminalOutput" class="terminal-body">
+          <!-- Populated by app.js -->
+        </div>
+
+        <div class="terminal-topbar" style="border-top: 1px solid rgba(255,255,255,0.08); border-bottom: none; background: #080d16;">
+          <div class="term-input-line" style="width: 100%; margin: 0;">
+            <span class="term-prompt">kirill@kirillos:~$</span>
+            <input type="text" id="terminalInput" class="term-input" placeholder="Введите команду (help, kfetch, projects, pages, c64, clear)..." autocomplete="off" spellcheck="false">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Preview Modal -->
+  <div id="previewModalOverlay" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span style="font-size: 1.2rem;">🌐</span>
+          <span id="modalTitleText">Превью проекта</span>
+        </div>
+        <div class="modal-controls">
+          <a id="modalExternalLink" href="#" target="_blank" rel="noopener" class="btn btn-secondary" style="padding: 6px 14px; font-size: 0.8rem;">
+            Открыть во весь экран ↗
+          </a>
+          <button class="btn btn-secondary" onclick="closePreviewModal()" style="padding: 6px 12px; font-size: 1rem; font-weight: bold;">
+            ✕
+          </button>
+        </div>
+      </div>
+      <iframe id="modalFrame" class="modal-frame" src="about:blank" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <div class="footer-left">
+        <div style="display: flex; align-items: center; gap: 8px; font-weight: 700; color: #fff;">
+          <span class="logo-badge" style="font-size: 0.75rem;">JP</span>
+          <span>japNslow // Кирилл</span>
+        </div>
+        <p>Разработка низкоуровневых ОС, ретро 3D движков и интерактивных приложений.</p>
+        <p style="font-size: 0.78rem;">Хостинг на <a href="https://japnslow.github.io/" style="color: var(--accent-cyan); text-decoration: none;">GitHub Pages</a> • Создано с любовью к ассемблеру, C и ретро-железу.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="https://github.com/japNslow" target="_blank" rel="noopener">GitHub Профиль</a>
+        <a href="https://github.com/japNslow/japnslow.github.io" target="_blank" rel="noopener">Репозиторий Портала</a>
+        <a href="#pages">GitHub Pages</a>
+        <a href="#stats">Статистика</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
